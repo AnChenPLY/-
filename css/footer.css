@@ -1,0 +1,64 @@
+@charset 'utf-8';
+footer {
+  background-color: #eee;
+  font-size: 0.16rem;
+}
+footer .server {
+  padding-top: 0.2rem;
+  display: flex;
+  justify-content: center;
+}
+footer .server .down-app {
+  background-image: url("../images/rBLkBlqp3pSAUjDFAAAAqM2yKYA236.png");
+}
+footer .server .my-center {
+  background-image: url("../images/rBLkCVqp3pSAItBpAAABv-mJDd4590.png");
+}
+footer .server .tel {
+  background-image: url("../images/rBLkCVqp3pSAND1WAAACDBVkQaU993.png");
+}
+footer .server p {
+  text-align: center;
+  height: 0.3rem;
+  width: 30%;
+  padding-top: 0.4rem;
+  line-height: 0.3rem;
+  background-repeat: no-repeat;
+  background-size: 0.4rem 0.4rem;
+  background-position: 0.35rem 0;
+}
+.bottom ul {
+  padding-top: 0.2rem;
+  display: flex;
+  justify-content: center;
+}
+.bottom ul li {
+  position: relative;
+  padding: 0 0.1rem;
+  font-size: 0.12rem;
+  color: #777;
+}
+.bottom ul li .base {
+  display: inline-block;
+  width: 0.1rem;
+  height: 0.08rem;
+  background-color: red;
+  margin-right: 0.05rem;
+  background: url("../images/wuxing.png") no-repeat 0.1rem 0.08rem;
+  background-position: center;
+}
+.bottom ul li em {
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0.03rem;
+  right: 0.02rem;
+  border: 0.03rem solid transparent;
+  border-top-color: pink;
+}
+.bottom p {
+  margin: 0.2rem 0;
+  text-align: center;
+  color: #777;
+  font-size: 0.14rem;
+}

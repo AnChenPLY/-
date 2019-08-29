@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      fixLayout()
+      window.addEventListener('resize',fixLayout)
+      function fixLayout() {
+        const width = window.screen.width; //屏幕的宽度
+        const fixW = 750; //设计图的比例
+        const scale = width / fixW; //scale比例
+        const meta = document.createElement("meta");
+        meta.setAttribute("name", "viewport");
+        meta.setAttribute(
+          "content",
+          `width=device-width,initial-scale=${scale}`
+        );
+        document.head.appendChild(meta);
+        console.log(scale)
+        // console.log(width)
+      }
+
+      /*  
+
+      */
+
+      /*
+            name="viewport" 视图窗口
+            content="
+                width=device-width 设备宽度
+                initial-scale=1.0 初始化比例值
+                maximum-scale=1    最大比例值
+                user-scalable=no    用户自定义缩放
+        移动端布局思路
+            1.固定宽度/高度(设计图方法)
+            2.百分比(相对于父级的宽度和高度：)【样式继承】
+            3.rem:
+                a)em根据元素自自身的字体大小计算 
+                b)Rem R->
+                    root 根节点(html) 根据html的字体大小计算其他元素尺寸
+                    em 父级
+      */
+    </script>
+  </body>
+</html>

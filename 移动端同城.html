@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title></title>
+  <script>
+    remchange();
+    window.addEventListener("resize", remchange);
+    function remchange() {
+      const html = document.querySelector("html");
+      const width = html.getBoundingClientRect().width; //拿到适配的宽度值
+      html.style.fontSize = width / 3.75 + "px"; //100
+    }
+  </script>
+  <script src="js/index.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/public.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/header.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/banner.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/nav.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/section.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/footer.css" media="all" />
+
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header id="header">
+    <div class="place">
+      <span>重庆</span>
+      <i class='drop-down'></i>
+    </div>
+    <div class="search">
+      <i class='search-big'></i>
+      <span>目的地/酒店/景点/关键字</span>
+    </div>
+    <div class="user">
+    </div>
+  </header>
+  <!-- 头部结束 -->
+
+  <!--轮播图开始-->
+  <div id="banner">
+    <div class="swiper-container">
+      <ul class="swiper-wrapper clearfix ">
+        <li class="swiper-slide"><a href="#"><img src="images/1.webp" alt=""></a></li>
+        <li class="swiper-slide"><a href="#"><img src="images/2.webp" alt=""></a></li>
+        <li class="swiper-slide"><a href="#"><img src="images/3.webp" alt=""></a></li>
+        <li class="swiper-slide"><a href="#"><img src="images/4.jpg" alt=""></a></li>
+        <li class="swiper-slide"><a href="#"><img src="images/5.jpg" alt=""></a></li>
+        <li class="swiper-slide"><a href="#"><img src="images/6.webp" alt=""></a></li>
+      </ul>
+      <div class="swiper-pagination">
+
+      </div>
+    </div>
+  </div>
+  <aside>
+    <a href="#"><img src="images/rBLkBlsfdWKAAtLbAAAu5Udn1O4922.png " alt=""></a>
+  </aside>
+  <!--轮播图结束-->
+  <!--导航栏开始-->
+  <div id="nav">
+    <div class="nav-top">
+      <ul>
+        <li><span><img src="./images/rBANC1qozNqAb3vRAAAD_Qg-dt4234.png" alt=""></span>
+          <p>火车票</p>
+        </li>
+        <li><span><img src="./images/rBLkCFqozNqAJqPYAAAFlYq1v7A413.png" alt=""></span>
+          <p>机票</p>
+        </li>
+        <li><span><img src="./images/rBLkBVqozNqAGbVbAAADpuwJ0xY082.png" alt=""></span>
+          <p>酒店住宿</p>
+        </li>
+        <li><span><img src="./images/rBLkCFqozNqAF4UUAAAFH-2jq70957.png" alt=""></span>
+          <p>景点门票</p>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-bottom">
+      <ul>
+        <li><a href="#"><img src="./images/rBLkBVqozbiAB7whAAABMV8dFnU373.png" alt=""></a>
+          <p>汽车票.船票</p>
+        </li>
+        <li><a href="#"><img src="./images/rBLkBVqoz5WARL6sAAACl0BdhXo397.png" alt=""></a>
+          <p>周边自由行</p>
+        </li>
+        <li><a href="#"><img src="./images/rBLkBVqozh6AXAIqAAABODWYrvg233.png" alt=""></a>
+          <p>周边跟团游</p>
+        </li>
+        <li><a href="#"><img src="./images/rBANC1qoz0yAN8dqAAABQG6IdnQ608.png" alt=""></a>
+          <p>国内游</p>
+        </li>
+        <li><a href="#"><img src="./images/rBANC1qoz5-AZ1AHAAABu7UlTDA659.png" alt=""></a>
+          <p>游轮</p>
+        </li>
+        <li><a href="#"><img src="./images/rBLkBlqo0GKARZ0jAAACzlV1vD0332.png" alt=""></a>
+          <p>出境游</p>
+        </li>
+        <li><a href="#"><img src="./images/rBLkCFqo0GKAV-H4AAACCoRioMc656.png" alt=""></a>
+          <p>海外玩乐</p>
+        </li>
+        <li><a href="#"><img src="./images/rBLkBVqo0MOAHG9GAAABfaEIhkw016.png" alt=""></a>
+          <p>签证</p>
+        </li>
+        <li><a href="#"><img src="./images/rBLkCFqo0MOANBZZAAACayFwVMA823.png" alt=""></a>
+          <p>全球WIFI</p>
+        </li>
+        <li><a href="#"><img src="./images/rBLkCFqo0MOAazKPAAABDjXiKXA355.png" alt=""></a>
+          <p>全部服务</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--导航栏结束-->
+  <section id="section">
+    <div class="limit-time">
+      <div class="limit-top clearfix">
+        <div class="limit-log"></div>
+        <div class="limit-clock">
+          <span>还剩</span>
+          <span class="hour clock">11</span>
+          <span class="sperator">:</span>
+          <span class="minutes clock">22</span>
+          <span class="sperator">:</span>
+          <span class="seconds clock">30</span>
+        </div>
+      </div>
+      <div class="limit-show clearfix">
+        <div class="show-img"></div>
+        <div class="show-detail">
+          <p>
+            【首发来了】定金支付100元可抵800元，重庆网红打卡点
+          </p>
+          <div class="price">
+            <span>￥100.00</span>起
+          </div>
+          <div class="more">
+            <a href="#">更多抢购 ></a>
+          </div>
+        </div>
+      </div>
+      <!--一元抢购-->
+      <div class="beauty-spot clearfix">
+        <div class="left-beauty">
+          <div class="oneY-spot">
+            <h3>1元玩景点</h3>
+            <p>plus会员</p>
+          </div>
+          <div class="one-logo">
+            <img src="images/rBLkCFqp0MaAXcDOAAASHzYoUEI450.png" alt="">
+          </div>
+        </div>
+        <div class="right-beauty">
+          <div class="oneY-spot">
+            <h3>出境特卖</h3>
+            <p>每日上新</p>
+          </div>
+          <div class="one-logo">
+            <img src="images/rBLkBlrz5OGARo6VAAAZQDF46aE442.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!--一元抢购结束-->
+      <!--下载预定-->
+      <div class="user-down">
+        <img src="images/touch_index_middle.jpg" alt="">
+      </div>
+      <!--下载预定结束-->
+      <div class="hot">
+        <h3 class="hot-title">
+          <i></i>
+          热门推荐
+        </h3>
+        <ul class="hot-list">
+          <li>巴厘岛</li>
+          <li>成都</li>
+          <li>长城</li>
+          <li>故宫</li>
+          <li class="dot">...</li>
+        </ul>
+        <ul class="trip-list">
+          <li><img src="images/1.jpg" alt=""></li>
+          <li><img src="images/2.jpg" alt=""></li>
+          <li><img src="images/3.jpg" alt=""></li>
+          <li><img src="images/4-1.jpg" alt=""></li>
+        </ul> 
+        <div class="more-play">
+          <a href="#">查看更多玩法</a>
+        </div>
+      </div>
+      <div class="advantage">
+        <ul>
+          <li class="clearfix">
+            <div class="adv-logo"></div>
+            <div class="adv-detail">
+              <h5>价格公正</h5>
+              <p>价格公开透明，请安心购买</p>
+            </div>
+          </li>
+          <li class="clearfix">
+            <div class="adv-logo"></div>
+            <div class="adv-detail">
+              <h5>产品丰富</h5>
+              <p>出行产品，全品类覆盖，一站式服务</p>
+            </div>
+          </li>
+          <li class="clearfix">
+            <div class="adv-logo"></div>
+            <div class="adv-detail">
+              <h5>品质保证</h5>
+              <p>精挑细选，产品优选，放心出行</p>
+            </div>
+          </li>
+          <li class="clearfix">
+            <div class="adv-logo"></div>
+            <div class="adv-detail">
+              <h5>专业顾问</h5>
+              <p>24小时专业客服，一对一服务</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!--底部-->
+  <footer>
+    <div class="server">
+      <p class="tel">
+        客服电话
+      </p>
+      <p class="down-app">
+        下载客户端
+      </p>
+      <p class="my-center">
+        我的同程
+      </p>
+    </div>
+    <div class="bottom">
+      <ul>
+        <li>电脑版</li>
+        <li><i class='base'></i>简体中文<em></em></li>
+        <li>意见反馈</li>
+      </ul>
+      <p>©2019同程旅游</p>
+    </div>
+  </footer>
+  </div>
+  <script type="text/javascript" src="./js/aclock.js"></script>
+  <script type="text/javascript">
+    let aside = document.querySelector('aside');
+    aside.addEventListener('touchend', function () {
+      document.body.removeChild(aside);
+    });
+  </script>
+</body>
+
+</html>
